@@ -42,7 +42,8 @@ a.loan_status=a.loan_status.str.replace(r'(^.*Paid$)', "Fully Paid")
 a.loan_status=a.loan_status.str.replace(r'(^.*Charged Off$)', "Charged Off")
 
 a.settlement_amount.unique()
-usef_cols = pd.DataFrame(a.isnull().sum().sort_values()[a.isnull().sum().sort_values()<20000])
+
+usef_cols = pd.DataFrame(a.isnull().sum().sort_values([a.isnull().sum().sort_values()<20000])
 usef_cols.reset_index(drop = False, inplace=True)
 usef_cols.columns = (['col_name','num_NaN'])
 new_data =pd.DataFrame()
