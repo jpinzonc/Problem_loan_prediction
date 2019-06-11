@@ -1,7 +1,7 @@
 # Problem loan prediction 2017
-## Udacity's Machine Learning Nanodegree Capstone Project. 
+## Udacity's Machine Learning Nanodegree Capstone Project
 
-The code detects problem loans in the Lending Club's data set form 2017. 
+The code detects problem loans in the Lending Club's data set from 2017
 
 Detailed information about the project and the code is inside the project's report: Capstone_project_JP.pdf
 
